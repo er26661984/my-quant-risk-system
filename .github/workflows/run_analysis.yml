@@ -23,4 +23,4 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
       - name: 运行量化风险分析
-        run: python main.py  # 确保你的主程序文件名是 main.py
+        run: python src/main.py  # 确保你的主程序文件名是 main.py
