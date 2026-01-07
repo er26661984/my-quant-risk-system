@@ -1,5 +1,6 @@
 import yfinance as yf
 import pandas as pd
+import matplotlib.pyplot as plt
 
 def start_analysis():
     print("--- 风险分析系统启动 ---")
@@ -30,3 +31,13 @@ def start_analysis():
 
 if __name__ == "__main__":
     start_analysis()
+
+
+
+# ... 你的量化计算代码 ...
+
+plt.plot(data['Close'])
+plt.title("Stock Risk Analysis")
+
+# 关键一步：把图片保存在项目根目录下
+plt.savefig('risk_report.png')
